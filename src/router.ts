@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 export enum R {
   TODO = 'TODO',
+  XUEN = 'XUEN',
   DONE = 'DONE'
 }
 
@@ -17,6 +18,11 @@ export const router = createRouter({
       path: '/todo',
       name: R.TODO,
       component: () => import('./views/Todo.vue')
+    },
+    {
+      path: '/xuen',
+      name: R.XUEN,
+      component: () => import('./views/Xuen.vue')
     },
     {
       path: '/done',

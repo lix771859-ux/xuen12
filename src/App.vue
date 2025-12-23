@@ -6,11 +6,11 @@
       <div>
         <router-link
           :class="`py-1 px-3 rounded-md text-white font-bold select-none ${
-            route.name === R.TODO ? 'bg-green-600' : ''
+            route.name === R.XUEN ? 'bg-green-600' : ''
           }`"
-          :to="{ name: R.TODO }"
+          :to="{ name: R.XUEN }"
         >
-          Todo
+          Xuentodo
         </router-link>
         <router-link
           :class="`py-1 px-3 rounded-md text-white font-bold select-none ml-4 ${
